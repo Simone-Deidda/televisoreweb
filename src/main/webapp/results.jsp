@@ -24,7 +24,7 @@
 					<td><%=televisore.getMarca() %></td>
 					<td><%=televisore.getModello() %></td>
 					<td>
-						<a href="?idTelevisore=<%=televisore.getIdTelevisore() %>">Dettaglio</a>
+						<a href="ExecuteShowTelevisoreServlet?idTelevisore=<%=televisore.getIdTelevisore() %>">Dettaglio</a>
 						<a href="?idTelevisore=<%=televisore.getIdTelevisore() %>">Modifica</a>
 						<a href="?idTelevisore=<%=televisore.getIdTelevisore() %>">Elimina</a>
 					</td>

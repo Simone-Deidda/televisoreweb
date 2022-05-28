@@ -21,7 +21,7 @@ public class TelevisoreServiceImpl implements TelevisoreService {
 
 	@Override
 	public Televisore caricaSingolo(int parseInt) throws Exception {
-		return null;
+		return televisoreDAO.get((long) parseInt);
 	}
 
 	@Override
