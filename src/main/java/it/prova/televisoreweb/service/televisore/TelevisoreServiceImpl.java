@@ -41,6 +41,7 @@ public class TelevisoreServiceImpl implements TelevisoreService {
 
 	@Override
 	public void aggiorna(Televisore televisore) throws Exception {
+		televisoreDAO.update(televisore);
 	}
 
 }

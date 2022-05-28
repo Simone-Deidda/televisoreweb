@@ -7,7 +7,7 @@ import java.util.List;
 import it.prova.televisoreweb.dao.DB_Mock;
 import it.prova.televisoreweb.model.Televisore;
 
-public class TelevisoreDAOImpl implements TelevisoreDAO{
+public class TelevisoreDAOImpl implements TelevisoreDAO {
 
 	@Override
 	public List<Televisore> list() throws Exception {
@@ -16,17 +16,24 @@ public class TelevisoreDAOImpl implements TelevisoreDAO{
 
 	@Override
 	public Televisore get(Long id) throws Exception {
-		for (Televisore abitante : DB_Mock.LISTA_TELEVISORI) {
-			if (abitante.getIdTelevisore() == id) {
-				return abitante;
+		for (Televisore televisore : DB_Mock.LISTA_TELEVISORI) {
+			if (televisore.getIdTelevisore() == id) {
+				return televisore;
 			}
 		}
-		
+
 		return null;
 	}
 
 	@Override
 	public int update(Televisore input) throws Exception {
+		for (Televisore televisore : DB_Mock.LISTA_TELEVISORI) {
+			if (televisore.getIdTelevisore().equals(input.getIdTelevisore())) {
+				DB_Mock.LISTA_TELEVISORI.remove(televisore);
+				DB_Mock.LISTA_TELEVISORI.add(input);
+				return 1;
+			}
+		}
 		return 0;
 	}
 
@@ -37,7 +44,7 @@ public class TelevisoreDAOImpl implements TelevisoreDAO{
 
 	@Override
 	public int delete(Televisore input) throws Exception {
-		return DB_Mock.LISTA_TELEVISORI.remove(input)?1:0;
+		return DB_Mock.LISTA_TELEVISORI.remove(input) ? 1 : 0;
 	}
 
 	@Override

@@ -42,7 +42,7 @@ public class Televisore {
 		return mpdello;
 	}
 
-	public void setMpdello(String mpdello) {
+	public void setModello(String mpdello) {
 		this.mpdello = mpdello;
 	}
 

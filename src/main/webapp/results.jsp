@@ -25,7 +25,7 @@
 					<td><%=televisore.getModello() %></td>
 					<td>
 						<a href="ExecuteShowTelevisoreServlet?idTelevisore=<%=televisore.getIdTelevisore() %>">Dettaglio</a>
-						<a href="?idTelevisore=<%=televisore.getIdTelevisore() %>">Modifica</a>
+						<a href="PrepareUpdateTelevisoreServlet?idTelevisore=<%=televisore.getIdTelevisore() %>">Modifica</a>
 						<a href="PrepareDeleteTelevisoreServlet?idTelevisore=<%=televisore.getIdTelevisore() %>">Elimina</a>
 					</td>
 				</tr>
