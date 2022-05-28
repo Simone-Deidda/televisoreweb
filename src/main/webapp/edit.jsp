@@ -5,10 +5,10 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Modifica televisore</title>
 </head>
 <body>
-	<p>Inserisci i dati del nuovo abitante</p>
+	<p>Inserisci i dati del nuovo televisore</p>
 	
 	<% if(request.getAttribute("Errore") != null){	%>
 		<p style="color: red;"><%=request.getAttribute("Errore")%></p>

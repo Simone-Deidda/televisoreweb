@@ -39,7 +39,8 @@ public class TelevisoreDAOImpl implements TelevisoreDAO {
 
 	@Override
 	public int insert(Televisore input) throws Exception {
-		return 0;
+		input.setIdTelevisore(DB_Mock.getNexIdAvailable());
+		return DB_Mock.LISTA_TELEVISORI.add(input)?1:0;
 	}
 
 	@Override

@@ -34,7 +34,7 @@ public class ExecuteShowTelevisoreServlet extends HttpServlet {
 			e.printStackTrace();
 		}
 		
-		request.setAttribute("abitante", result);
+		request.setAttribute("televisore", result);
 		RequestDispatcher rd = request.getRequestDispatcher("dettaglio.jsp");
 		rd.forward(request, response);
 

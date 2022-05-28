@@ -26,7 +26,7 @@ public class TelevisoreServiceImpl implements TelevisoreService {
 
 	@Override
 	public int inserisci(Televisore insertInput) throws Exception {
-		return 0;
+		return televisoreDAO.insert(insertInput);
 	}
 
 	@Override

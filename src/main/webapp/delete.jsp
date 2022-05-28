@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Conferma Rimozione</title>
+<title>Conferma Rimozione televisore</title>
 </head>
 <body>
 	<% if(request.getAttribute("televisore") == null)	{%>

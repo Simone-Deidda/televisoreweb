@@ -8,7 +8,7 @@
 <title>Dettagli Televisore</title>
 </head>
 <body>
-	<% Televisore televisore = (Televisore)request.getAttribute("abitante");
+	<% Televisore televisore = (Televisore)request.getAttribute("televisore");
 		if(televisore != null) {
 	%>
 		<p>Marca: <%=televisore.getMarca() %></p>

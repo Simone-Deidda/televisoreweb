@@ -28,8 +28,8 @@ public class ExecuteDeleteTelevisoreServlet extends HttpServlet {
 		List<Televisore> listaTelevisore = new ArrayList<Televisore>();
 		
 		try {
-			Televisore abitante = televisoreServiceInstance.caricaSingolo(idTelevisore);
-			televisoreServiceInstance.elimina(abitante);
+			Televisore televisore = televisoreServiceInstance.caricaSingolo(idTelevisore);
+			televisoreServiceInstance.elimina(televisore);
 			listaTelevisore = televisoreServiceInstance.listAll();
 		} catch (Exception e) {
 			e.printStackTrace();

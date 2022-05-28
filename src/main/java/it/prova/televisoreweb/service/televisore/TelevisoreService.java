@@ -7,7 +7,7 @@ import it.prova.televisoreweb.model.Televisore;
 
 
 public interface TelevisoreService {
-	public void setTelevisoreDAO(TelevisoreDAO abitanteDAO);
+	public void setTelevisoreDAO(TelevisoreDAO televisoreDAO);
 
 	public List<Televisore> cercaPerMarcaEModello(String marca, String modello);
 

@@ -33,6 +33,6 @@
 	
 	</table>
 	
-	<a href="">Inserisci nuovo televisore.</a>
+	<a href="PrepareInsertTelevisoreServlet">Inserisci nuovo televisore.</a>
 </body>
 </html>
