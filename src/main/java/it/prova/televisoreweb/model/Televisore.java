@@ -38,7 +38,7 @@ public class Televisore {
 		this.marca = marca;
 	}
 
-	public String getMpdello() {
+	public String getModello() {
 		return mpdello;
 	}
 

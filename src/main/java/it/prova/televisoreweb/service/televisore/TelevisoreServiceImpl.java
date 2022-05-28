@@ -16,7 +16,7 @@ public class TelevisoreServiceImpl implements TelevisoreService {
 
 	@Override
 	public List<Televisore> cercaPerMarcaEModello(String marca, String modello) {
-		return null;
+		return televisoreDAO.findByMarcaAndModello(marca, modello);
 	}
 
 	@Override

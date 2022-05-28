@@ -1,8 +1,10 @@
 package it.prova.televisoreweb.dao.televisore;
 
 import java.sql.Connection;
+import java.util.ArrayList;
 import java.util.List;
 
+import it.prova.televisoreweb.dao.DB_Mock;
 import it.prova.televisoreweb.model.Televisore;
 
 public class TelevisoreDAOImpl implements TelevisoreDAO{
@@ -38,7 +40,13 @@ public class TelevisoreDAOImpl implements TelevisoreDAO{
 
 	@Override
 	public List<Televisore> findByMarcaAndModello(String marca, String modello) {
-		return null;
+		List<Televisore> result = new ArrayList<>();
+
+		for (Televisore televisore : DB_Mock.LISTA_TELEVISORI) {
+			if (televisore.getMarca().startsWith(marca) && televisore.getModello().startsWith(modello))
+				result.add(televisore);
+		}
+		return result;
 	}
 
 }
