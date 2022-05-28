@@ -31,11 +31,12 @@ public class TelevisoreServiceImpl implements TelevisoreService {
 
 	@Override
 	public List<Televisore> listAll() throws Exception {
-		return null;
+		return televisoreDAO.list();
 	}
 
 	@Override
 	public void elimina(Televisore televisore) throws Exception {
+		televisoreDAO.delete(televisore);
 	}
 
 	@Override
